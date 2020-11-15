@@ -1,8 +1,8 @@
 import os
 import pprint
 
-inputsDir = 'inputs'
-resultsDir = 'outputs'
+inputsDir = 'outputs'
+resultsDir = 'results'
 path = os.listdir(inputsDir)
 
 dict = {'ð': 'ơ̆', 'ẽ': 'ĕ', '¡': 'i', 'mĩ': 'mĭ', 'ợ': 'ơ', 'ồ': 'ŏ', 'ố': 'ơ̆', 'ỗ': 'ô̆', 'ơi': 'ơĭ', 'ổi': 'ôĭ', 'š': 'ĕ', 'Š': 'ê̆', 'ủ': 'ŭ', 'Ủ': 'Ŭ', 'ũ': 'ŭ', 'Ũ': 'Ŭ'}
