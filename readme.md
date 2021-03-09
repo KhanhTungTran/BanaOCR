@@ -10,8 +10,27 @@ Công cụ sử dụng:
 
 ## Tính năng
 
-- Nhận diện tiếng Bana có trong 1 hình ảnh đầu vào
-- Từ đó rút trích ra tiếng Bana vào định dạng file txt (chưa có format/định dạng)
+- Nhận diện chữ đánh máy/ viết tay có trong 1 hình ảnh đầu vào
+- Từ đó rút trích ra tiếng Việt vào định dạng file txt (chưa có format/định dạng)
+- Sau đó sử dụng các hàm Heuristics để chuyển sang tiếng Bana
+|Gốc |Chuyển sang|
+|----|----|
+| ð  | ơ̆  |
+| ẽ  | ĕ  |
+| ¡  | i  |
+| mĩ | mĭ |
+| ợ  | ơ  |
+| ồ  | ŏ  |
+| ố  | ơ̆  |
+| ỗ  | ô̆  |
+| ơi | ơĭ |
+| ổi | ôĭ |
+| š  | ĕ  |
+| Š  | ê̆  |
+| ủ  | ŭ  |
+| Ủ  | Ŭ  |
+| ũ  | ŭ  |
+| Ũ  | Ŭ  |
 
 ## Sử dụng
 
