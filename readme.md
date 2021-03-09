@@ -13,6 +13,7 @@ Công cụ sử dụng:
 - Nhận diện chữ đánh máy/ viết tay có trong 1 hình ảnh đầu vào
 - Từ đó rút trích ra tiếng Việt vào định dạng file txt (chưa có format/định dạng)
 - Sau đó sử dụng các hàm Heuristics để chuyển sang tiếng Bana
+
 |Gốc |Chuyển sang|
 |----|----|
 | ð  | ơ̆  |
