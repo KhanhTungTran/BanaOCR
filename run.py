@@ -3,10 +3,12 @@ import pytesseract
 import cv2
 from skimage import io
 import numpy as np
+from imutils import paths
 
-inputsDir = 'inputs'
-outputsDir = 'outputs'
-imageName = list(filter(lambda file: file[-3:] == 'png', os.listdir(inputsDir)))
+inputDir = 'input'
+outputDir = 'output'
+imageName = list(filter(lambda file: file[-3:] == 'png', os.listdir(inputDir)))
+paths.list_images()
 
 def loadImage(img_file):
     img = io.imread(img_file)           # RGB order
@@ -18,7 +20,7 @@ def loadImage(img_file):
     return img
 
 for image in imageName:
-    img = io.imread(inputsDir + '/' + image)
+    img = io.imread(inputDir + '/' + image)
     print(img.shape)
     # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # img = loadImage(inputsDir + '/' + image)
@@ -28,5 +30,5 @@ for image in imageName:
 
     custom_oem_psm_config = '--psm 6'
 
-    with open(outputsDir + '/' + image[:-3] + 'txt', 'w', encoding='utf-8') as f:
+    with open(outputDir + '/' + image[:-3] + 'txt', 'w', encoding='utf-8') as f:
         f.write(pytesseract.image_to_string(img, lang='vie', config=custom_oem_psm_config))

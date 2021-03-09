@@ -5,10 +5,10 @@ import skimage.morphology
 import scipy as sp
 import matplotlib.pyplot as plt
 
-def splitImageToColumns(imageNames, inputsDir, columnsDir):
+def splitImageToColumns(imageNames, inputDir, columnsDir):
     for image in imageNames:
         print('---------------------',image)
-        img = plt.imread(inputsDir + '/' + image) # Read in the image and convert to grayscale
+        img = plt.imread(inputDir + '/' + image) # Read in the image and convert to grayscale
 
         img = img[...,::-1]
         h, w = img.shape[:2]
@@ -115,7 +115,7 @@ def splitImageToColumns(imageNames, inputsDir, columnsDir):
         cv2.imwrite(columnsDir + '/' + image[0:-4] + '-' + '1' + '.jpg', colRightImg)
 
 if __name__ == "__main__":
-    inputDir = 'inputs'
+    inputDir = 'input'
     imageName = list(filter(lambda file: file[-3:] == 'jpg', os.listdir(inputDir)))
     columnDir = 'splitColumn'
 
