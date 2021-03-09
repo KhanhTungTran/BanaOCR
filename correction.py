@@ -1,5 +1,4 @@
 import os
-import pprint
 
 inputDir = 'output'
 resultDir = 'result'
